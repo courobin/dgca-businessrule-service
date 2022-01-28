@@ -5,7 +5,7 @@ dgc:
 sap:
   btp:
     credstore:
-      namespace: DgcaIssuerServiceCredentialStore
+      namespace: credstore-runny-time
       encrypted: false
       username: <replaced_by_cfenv>
       password: <replaced_by_cfenv>
