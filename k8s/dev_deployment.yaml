@@ -9,7 +9,7 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: 8081
+      targetPort: 8080
   selector:
     app: businessrule-service
   type: LoadBalancer
@@ -49,7 +49,7 @@ spec:
                 name: dgca-businessrule-service
           ports:
             - name: http
-              containerPort: 8081
+              containerPort: 8080
             - name: https
               containerPort: 443
           volumeMounts:
@@ -61,8 +61,8 @@ spec:
               readOnly: true
           readinessProbe:
             httpGet:
-              path: /
-              port: 8081
+              path: /rules
+              port: 8080
 
 ---
 apiVersion: servicecatalog.k8s.io/v1beta1
