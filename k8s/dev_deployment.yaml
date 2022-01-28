@@ -42,7 +42,7 @@ spec:
         - name: regcred
       containers:
         - name: businessrule-service
-          image: docker.pkg.github.com/courobin/dgca-businessrule-service/dgca-businessrule-service:1.1.5-784a3a3
+          image: docker.pkg.github.com/courobin/dgca-businessrule-service/dgca-businessrule-service:1.1.5-0519c24
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
